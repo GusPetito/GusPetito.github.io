@@ -29,12 +29,20 @@ body{
 
 .section{
   width: 80%;
-  min-height: 400px;
+  height: 400px;
   margin: 0 10% 0 10%;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   text-align: center;
   border: 6px solid rgb(235, 235, 235);
+  position: relative;
+}
+
+.section-body{
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .btn{
@@ -57,10 +65,10 @@ body{
 
 #profile-pic{
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  /* float: right; */
-  margin: 75px 20px 0 20px;
+  width: 18vw;
+  height: 18vw;
+  float: right;
+  margin: 0 20px 0 20px;
   display: inline-block;
 }
 
