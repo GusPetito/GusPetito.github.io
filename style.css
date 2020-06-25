@@ -59,6 +59,18 @@ body{
   background-color: rgb(245, 245, 245);
 }
 
+.glyph-link{
+  margin: 10px;
+  color: black;
+  transition: all .5s;
+}
+
+.glyph-link:hover{
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* #about-me{
   border-color: green;
 } */
