@@ -88,6 +88,7 @@ body{
   /* transform: translateY(10%); */
   position: relative;
   top: -60px;
+  margin-left: 100px;
 }
 
 #about-me-text{
