@@ -2,14 +2,14 @@ body{
   padding: 0;
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
-  text-align: center;
 }
 
-#background-img{
-  background-image: url(imgs/nature_banner.jpeg);
-  background-position: top;
-  background-size: cover;
-  transform: translateY(-200px);
+.background-img{
+  /* background-image: url(imgs/nature_banner.jpeg); */
+  background-color: rgb(245, 245, 245);
+  /* background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; */
   width: 100%;
   height: 800px;
   position: fixed;
@@ -18,16 +18,46 @@ body{
 
 .section{
   width: 80%;
-  height: 400px;
-  margin: 200px 10% 200px 10%;
-  background-color: white;
+  min-height: 400px;
+  margin: 100px 10% 0 10%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.btn{
+  padding: 10px;
+  margin: 10px;
   border-radius: 5px;
+  border: solid 2px rgb(245, 245, 245);
+  color: black;
+  text-decoration: none;
+  transition: all .25s;
+}
+
+.btn:hover{
+  background-color: rgb(245, 245, 245);
 }
 
 #profile-pic{
   border-radius: 50%;
   width: 250px;
   height: 250px;
-  float: left;
-  margin: 75px 0 0 20px;
+  float: right;
+  margin: 75px 20px 0 20px;
+}
+
+#about-me-text{
+  margin-left: 20px;
+}
+
+#about-me-name{
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+#about-me-title{
+  font-size: 50px;
+  margin-top: 0;
 }
