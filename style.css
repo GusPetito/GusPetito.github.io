@@ -22,16 +22,12 @@ body{
 }
 
 .background-img{
-  height: 100%;
+  height: 125%;
   width: 100%;
-  background-position: top;
+  background-position: bottom;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-}
-
-#intro-pic{
-  background-image: url(imgs/cornell-flowers.jpg);
 }
 
 .centered-absolute{
@@ -135,10 +131,6 @@ body{
 #project-arrow-text{
   font-size: 60px;
   margin: 0;
-}
-
-#horn-pic{
-  background-image: url(imgs/profile_pic.jpeg);
 }
 
 #footer{
