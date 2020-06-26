@@ -47,10 +47,10 @@ body{
 .section{
   width: 800px;
   height: 400px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, .9);
   border-radius: 15px;
   text-align: center;
-  border: 6px solid rgb(235, 235, 235);
+  border: 6px solid rgba(235, 235, 235, .9);
 }
 
 .section-body{
@@ -72,16 +72,27 @@ body{
   background-color: rgb(245, 245, 245);
 }
 
+.glyph-under{
+  position: absolute;
+  margin: 10px;
+  color: transparent;
+  background-image: linear-gradient(to left, violet, blue, green, yellow, red);
+  opacity: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 .glyph-link{
+  position: relative;
   margin: 10px;
   color: black;
-  transition: color .25s;
+  -webkit-transition: background-image, color 2s;
+  opacity: 100%;
+  transition: opacity .2s;
 }
 
 .glyph-link:hover{
-  background-image: linear-gradient(to left, violet, blue, green, yellow, red);   -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  opacity: 0;
 }
 
 #profile-pic{
