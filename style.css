@@ -9,41 +9,57 @@ body{
   background-color: rgb(245, 245, 245);
 }
 
+.vertical-center{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.flex-center-objects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .background-img{
-  height: 800px;
+  height: 100%;
   width: 100%;
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  /* top: -200px; */
 }
 
 #intro-pic{
   background-image: url(imgs/cornell-flowers.jpg);
 }
 
+.centered-absolute{
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;    
+  margin:auto;
+}
+
 .section-wrapper{
-  padding: 200px 0 200px 0;
+  flex-direction: column;
+  height: 100%;
 }
 
 .section{
   width: 800px;
   height: 400px;
-  /* margin: 0 20% 0 20%; */
-  margin: auto;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   text-align: center;
   border: 6px solid rgb(235, 235, 235);
-  position: relative;
 }
 
 .section-body{
-  position: absolute;
-  margin: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  height: 100%;
+  width: 100%;
 }
 
 .btn{
@@ -72,22 +88,11 @@ body{
   color: transparent;
 }
 
-/* #about-me{
-  border-color: green;
-} */
-
 #profile-pic{
   border-radius: 50%;
-  /* width: 18vw; */
-  /* height: 18vw; */
   width: 200px;
   height: 200px;
-  /* float: right; */
-  margin: 0 20px 0 20px;
   display: inline-block;
-  /* transform: translateY(10%); */
-  position: relative;
-  top: -60px;
   margin-left: 100px;
 }
 
@@ -97,13 +102,11 @@ body{
 }
 
 #about-me-name{
-  /* font-size: 5vw; */
   font-size: 80px;
   margin: 0;
 }
 
 #about-me-title{
-  /* font-size: 2.5vw; */
   font-size: 40px;
   margin-top: 0;
 }
@@ -115,11 +118,6 @@ body{
 .fa-arrow-down{
   color: white;
   -webkit-text-stroke: 2px rgb(235, 235, 235);
-}
-
-
-.fa-arrow-down:hover{
-  -webkit-text-stroke: 0;
 }
 
 #horn-pic{
