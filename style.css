@@ -129,7 +129,7 @@ body{
 
 .bordered-text{
   color: white;
-  -webkit-text-stroke: 2px rgb(235, 235, 235);
+  -webkit-text-stroke: 2px rgb(95, 95, 95);
 }
 
 #project-arrow-text{
