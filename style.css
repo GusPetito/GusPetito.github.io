@@ -103,6 +103,11 @@ body{
   margin-left: 100px;
 }
 
+.profile-pic-left{
+  margin-right: 100px;
+  margin-left: 0;
+}
+
 .body-text{
   display: inline-block;
   width: 50%;
