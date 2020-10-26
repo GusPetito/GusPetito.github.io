@@ -40,6 +40,6 @@ let addSection = (isPictureLeft, withArrow, title, text, imageLink, iconImageLin
   getLastClassElement("github-link").href = githubLink
 }
 
-addSection(true, true, "Test project 1", "Test 1 text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum nulla nulla, a aliquam tellus bibendum quis. Donec vulputate mauris a enim molestie feugiat. Etiam dapibus aliquam odio, ut varius neque efficitur eget.", 'imgs/cornell3.jpg', 'imgs/cornell1.jpg', {githubLink: "#git", alternateLink:"#link"})
+addSection(true, true, "Mandelbrot Set Generator", "A mandelbrot fractal generator built in Python using NumPy and PyGame. Supports zooming in and aesthetic options.", 'imgs/cornell3.jpg', 'imgs/mandelbrot.png', {githubLink: "https://github.com/GusPetito/Mandelbrot-Set-Generator"})
 
-addSection(false, false, "Test project 2", "Test 2 text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum nulla nulla, a aliquam tellus bibendum quis.", 'imgs/cornell4.jpg', 'imgs/cornell2.jpg', {githubLink: "#git2"})
+addSection(false, false, "Conway's Game of Life", "A small Conway's Game of Life simulator built in Python.", 'imgs/cornell4.jpg', 'imgs/conways.png', {githubLink: "https://github.com/GusPetito/conways-game-of-life"})
