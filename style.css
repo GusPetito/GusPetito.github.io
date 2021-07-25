@@ -72,27 +72,17 @@ body{
   background-color: rgb(245, 245, 245);
 }
 
-.glyph-under{
-  position: absolute;
-  margin: 10px;
-  color: transparent;
-  background-image: linear-gradient(to left, violet, blue, green, yellow, red);
-  opacity: 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
 .glyph-link{
   position: relative;
   margin: 10px;
   color: black;
   -webkit-transition: background-image, color 2s;
   opacity: 100%;
-  transition: opacity .2s;
+  transition: color .2s;
 }
 
 .glyph-link:hover{
-  opacity: 0;
+  color:rgb(95, 95, 95);
 }
 
 .profile-pic{

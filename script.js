@@ -1,12 +1,15 @@
+// Get the project section
 let projects = document.getElementById("projects")
 let sectionHtml = projects.firstElementChild
 projects.innerHTML = ""
 
+// Return the last element with class className
 const getLastClassElement = className => {
   let elems = document.getElementsByClassName(className)
   return elems[elems.length - 1]
 }
 
+// Add a block to the project section
 let addSection = (isPictureLeft, withArrow, title, text, imageLink, iconImageLink, {githubLink, alternateLink}) => {
   let newSectionHtml = sectionHtml.cloneNode(true)
   let newId = `project-${title.split(' ').join('-').toLowerCase()}`
@@ -40,6 +43,7 @@ let addSection = (isPictureLeft, withArrow, title, text, imageLink, iconImageLin
   getLastClassElement("github-link").href = githubLink
 }
 
+// Add the projects
 addSection(true, true, "Mandelbrot Set Generator", "A mandelbrot fractal generator built in Python using NumPy and PyGame. Supports zooming in and aesthetic options.", 'imgs/cornell3.jpg', 'imgs/mandelbrot.png', {githubLink: "https://github.com/GusPetito/Mandelbrot-Set-Generator"})
 
 addSection(false, false, "Conway's Game of Life", "A small Conway's Game of Life simulator built in Python.", 'imgs/cornell4.jpg', 'imgs/conways.png', {githubLink: "https://github.com/GusPetito/conways-game-of-life"})
