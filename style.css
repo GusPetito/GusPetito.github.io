@@ -9,6 +9,16 @@ body{
   background-color: rgb(245, 245, 245);
 }
 
+.navbar{
+  z-index: 1;
+  position: fixed;
+  width: 100vw;
+}
+
+.selected-page{
+  color: red;
+}
+
 .vertical-center{
   position: absolute;
   top: 50%;
@@ -22,8 +32,8 @@ body{
 }
 
 .background-img{
-  height: 125%;
-  width: 100%;
+  height: 125vh;
+  width: 100vw;
   background-position: bottom;
   background-size: cover;
   background-attachment: fixed;
@@ -45,8 +55,8 @@ body{
 }
 
 .section{
-  width: 800px;
-  height: 400px;
+  width: 1000px;
+  height: 500px;
   background-color: rgba(255, 255, 255, .9);
   border-radius: 15px;
   text-align: center;
